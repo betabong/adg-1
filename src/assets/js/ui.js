@@ -18,8 +18,8 @@ $(document).ready(function () {
     })
     return $checkbox.change(function () {
       function hideShowPanel (hide, id) {
-        var $trigger = $("[for='" + id + "']"),
-          $panel = $(`#${id}_panel`)
+        var $trigger = $("[for='" + id + "']")
+        var $panel = $(`#${id}_panel`)
 
         if (!hide) {
           $trigger.addClass('is-active')

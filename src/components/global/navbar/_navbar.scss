@@ -151,7 +151,6 @@
   .site-content {
     padding-left: $navWidthMax;
     @include above-desktop {
-      padding-left: $navWidthMax + 100px;
     }
   }
   .navbar--toggle {

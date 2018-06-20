@@ -8,13 +8,7 @@
   margin-bottom: 0;
   font-weight: 300;
 
-  //width: 100%;
-  &:before {
-    @include navbar_white_line__pseudo;
-    left: -50vw; right: -50vw;
-    top: 0;
-    height: 1px;
-  }
+
   .footer--left,
   .footer--right {
     margin-bottom: $gutter;
@@ -30,12 +24,13 @@
 
   .footer--left {
     img {
-      height: 80px;
+      max-height: 60px;
     }
   }
   .footer--right {
     img {
-      height: 40px;
+      max-height: 40px;
+      max-width: 80px;
     }
   }
 
@@ -55,6 +50,8 @@
 
 .footer--inner {
   @include l-site_width;
+  border-top: 1px solid;
+  padding-top: 30px;
 }
 
 @include above-tablet-portrait {
@@ -70,7 +67,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: -$gutter / 2;
 }
 
 .footer--label {
@@ -79,11 +75,10 @@
 }
 
 .footer--agency {
-  margin: $gutter / 2;
-
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
+
 }
 
 .footer--logolink {

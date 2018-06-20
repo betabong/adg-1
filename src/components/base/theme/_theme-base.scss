@@ -60,7 +60,7 @@ $theme-3-light: $c-blue-light;
   }
 }
 @mixin theme-isLight {
-  .theme.is-below & {
+  .theme.is-never & {
     @content;
   }
 }

@@ -3,14 +3,6 @@ $navWidthMax: 260px;
 
 
 @mixin navbar_white_line__pseudo {
-  @include navbar_white_line__bg;
-  content: "";
-  position: absolute;
-  display: inline-block;
-  opacity: 1;
-  @include theme-isLight {
-    opacity: 1;
-  }
 }
 
 
